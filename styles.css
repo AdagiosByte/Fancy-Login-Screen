@@ -26,9 +26,48 @@ h1{
 
 .login-button{
     background-color: rgb(43, 143, 143);
+    -webkit-text-fill-color: beige;
 }
 
 .login-button:hover{
     cursor: pointer;
     background-color: rgb(43, 143, 143, 50%);
+    -webkit-text-fill-color: rgba(245, 245, 220, 0.581);
+    
+}
+
+body{
+    background-color: black;
+}
+
+.extra-options{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 25%
+}
+
+.new-account-button{
+    background-color: rgb(43, 143, 143);
+    -webkit-text-fill-color: beige;
+}
+
+.new-account-button:hover{
+    cursor: pointer;
+    background-color: rgb(43, 143, 143, 50%);
+    -webkit-text-fill-color: rgba(245, 245, 220, 0.581);
+    
+}
+
+.Reset-button{
+    background-color: rgb(43, 143, 143);
+    -webkit-text-fill-color: beige;
+}
+
+.Reset-button:hover{
+    cursor: pointer;
+    background-color: rgb(43, 143, 143, 50%);
+    -webkit-text-fill-color: rgba(245, 245, 220, 0.581);
+    
 }
