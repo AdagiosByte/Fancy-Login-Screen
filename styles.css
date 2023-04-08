@@ -7,6 +7,7 @@ img{
 h1{
     font: 2em sans-serif;
     -webkit-text-fill-color: hsl(0, 0%, 100%, 50%);
+    text-align: center;
 }
 
 .container{
@@ -16,11 +17,13 @@ h1{
 }
 
 .menu{
+    --varWidth: 40%;
+    --varShift: 70%;
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 50%;
-    transform: translateX(50%) translateY(-200%);
+    max-width: var(--varWidth);
+    transform: translateX(var(--varShift)) translateY(-200%);
     gap: 1em;
 }
 
@@ -70,4 +73,11 @@ body{
     background-color: rgb(43, 143, 143, 50%);
     -webkit-text-fill-color: rgba(245, 245, 220, 0.581);
     
+}
+
+@media (max-width:1000px) {
+    .menu{
+        --varWidth: 50%;
+        --varShift: 50%;
+    }
 }
